@@ -36,7 +36,7 @@ function reduceToAllTrue(sourceArray){
 
 function reduceToAnyTrue(sourceArray){
     const reducer = function(accumulator, currentValue){  
-        if(accumulator == true){
+        if(accumulator === true){
             return true
         } else {
             return !!currentValue
