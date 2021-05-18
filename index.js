@@ -16,7 +16,8 @@ function mapToSquare(sourceArray){
 }
 
 function reduceToTotal(sourceArray, startingPoint = 0){
-    const reducer = function(accumulator, currentValue){ return accumulator + currentValue }
+    const reducer = function(accumulator, currentValue){
+      return accumulator + currentValue }
 
     return sourceArray.reduce(reducer, startingPoint)
 }
@@ -24,7 +25,7 @@ function reduceToTotal(sourceArray, startingPoint = 0){
 function reduceToAllTrue(sourceArray){
 
     const reducer = function(accumulator, currentValue){  
-        if(!!accumulator == true && !!currentValue == true){
+        if(accumulator === true && currentValue === true){
             return true;
         } else {
             return false;
